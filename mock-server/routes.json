@@ -1,0 +1,11 @@
+{
+  "/api/auth/login": "/users?email=:email",
+  "/api/auth/register": "/users",
+  "/api/events/popular": "/events?_sort=attendees&_order=desc",
+  "/api/events/search": "/events?name_like=:query",
+  "/api/events/:id/tickets": "/tickets?eventId=:id",
+  "/api/users/:id/tickets": "/tickets?userId=:id",
+  "/api/users/:id/events": "/events?organizerId=:id",
+  "/api/messages/:conversationId": "/messages?conversationId=:conversationId",
+  "/api/conversations/:userId": "/conversations?participants_like=:userId"
+}

@@ -1,0 +1,28 @@
+/build/
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+**/GeneratedPluginRegistrant.*
+**/.flutter-plugins
+pubspec.lock
+.idea/
+.vscode/
+.gradle/
+android/.gradle/
+**/local.properties
+**/*.iml
+.DS_Store
+ios/Pods/
+android/.gradle/
+android/app/*.keystore
+**/build/
+
+# Misc
+*.log
+*.tmp
+*.swp
+
+# Exclude generated files
+**/generated/

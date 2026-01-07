@@ -1,0 +1,167 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "demo@myevent.com",
+      "password": "123456",
+      "name": "Demo User",
+      "avatar": "https://i.pravatar.cc/150?img=1",
+      "token": "demo-jwt-token-12345"
+    },
+    {
+      "id": 2,
+      "email": "john@myevent.com",
+      "password": "123456",
+      "name": "John Doe",
+      "avatar": "https://i.pravatar.cc/150?img=2",
+      "token": "demo-jwt-token-67890"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Rock Fest 2025",
+      "description": "El mejor festival de rock del año con las bandas más populares",
+      "date": "2025-12-31T20:00:00Z",
+      "location": "Estadio Nacional",
+      "latitude": 19.4326,
+      "longitude": -99.1332,
+      "price": 850,
+      "currency": "MXN",
+      "imageUrl": "https://picsum.photos/400/300?random=1",
+      "category": "Música",
+      "organizerId": 1,
+      "attendees": 2500,
+      "capacity": 5000,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Tech Conference 2025",
+      "description": "Conferencia de tecnología con speakers internacionales",
+      "date": "2026-01-15T09:00:00Z",
+      "location": "Centro de Convenciones",
+      "latitude": 19.4260,
+      "longitude": -99.1679,
+      "price": 1200,
+      "currency": "MXN",
+      "imageUrl": "https://picsum.photos/400/300?random=2",
+      "category": "Tecnología",
+      "organizerId": 2,
+      "attendees": 850,
+      "capacity": 1000,
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Food Festival",
+      "description": "Festival gastronómico con los mejores chefs de la ciudad",
+      "date": "2026-02-10T12:00:00Z",
+      "location": "Parque Central",
+      "latitude": 19.4200,
+      "longitude": -99.1500,
+      "price": 350,
+      "currency": "MXN",
+      "imageUrl": "https://picsum.photos/400/300?random=3",
+      "category": "Gastronomía",
+      "organizerId": 1,
+      "attendees": 1200,
+      "capacity": 2000,
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "Art Exhibition",
+      "description": "Exposición de arte contemporáneo",
+      "date": "2026-01-20T18:00:00Z",
+      "location": "Museo de Arte Moderno",
+      "latitude": 19.4250,
+      "longitude": -99.1800,
+      "price": 150,
+      "currency": "MXN",
+      "imageUrl": "https://picsum.photos/400/300?random=4",
+      "category": "Arte",
+      "organizerId": 2,
+      "attendees": 450,
+      "capacity": 500,
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "Yoga Retreat",
+      "description": "Retiro de yoga y meditación en la naturaleza",
+      "date": "2026-03-05T07:00:00Z",
+      "location": "Centro de Retiro Paz",
+      "latitude": 19.3500,
+      "longitude": -99.2000,
+      "price": 2500,
+      "currency": "MXN",
+      "imageUrl": "https://picsum.photos/400/300?random=5",
+      "category": "Bienestar",
+      "organizerId": 1,
+      "attendees": 30,
+      "capacity": 50,
+      "status": "active"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "eventId": 1,
+      "userId": 1,
+      "purchaseDate": "2025-12-20T10:30:00Z",
+      "qrCode": "QR-ROCK-2025-001",
+      "status": "valid",
+      "paymentMethod": "online",
+      "price": 850
+    },
+    {
+      "id": 2,
+      "eventId": 3,
+      "userId": 1,
+      "purchaseDate": "2025-12-22T14:15:00Z",
+      "qrCode": "QR-FOOD-2025-001",
+      "status": "valid",
+      "paymentMethod": "online",
+      "price": 350
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "conversationId": 1,
+      "senderId": 2,
+      "receiverId": 1,
+      "text": "¡Hola! ¿Vas a ir al Rock Fest?",
+      "timestamp": "2025-12-27T15:30:00Z",
+      "read": false
+    },
+    {
+      "id": 2,
+      "conversationId": 1,
+      "senderId": 1,
+      "receiverId": 2,
+      "text": "¡Claro! Ya tengo mi boleto",
+      "timestamp": "2025-12-27T15:32:00Z",
+      "read": true
+    },
+    {
+      "id": 3,
+      "conversationId": 1,
+      "senderId": 2,
+      "receiverId": 1,
+      "text": "¡Genial! Nos vemos allá 🎸",
+      "timestamp": "2025-12-27T15:35:00Z",
+      "read": false
+    }
+  ],
+  "conversations": [
+    {
+      "id": 1,
+      "participants": [1, 2],
+      "lastMessage": "¡Genial! Nos vemos allá 🎸",
+      "lastMessageTime": "2025-12-27T15:35:00Z",
+      "unreadCount": 2
+    }
+  ]
+}
